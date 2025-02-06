@@ -12,7 +12,7 @@ CCOPTS =
 
 all: induction
 
-induction: induction.o test_set.o
+induction: induction.o run_tests.o test_set.o
 	$(CC) $^ -o $@
 
 %.o: %.c

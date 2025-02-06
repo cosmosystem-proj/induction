@@ -16,5 +16,5 @@ bool induction_test_false() { return false; }
 
 BEGIN_TEST_SET
 INDUCTION_TEST(induction_test_true, "True test")
-INDUCTION_TEST(induction_test_true, "False test")
+INDUCTION_TEST(induction_test_false, "False test")
 END_TEST_SET

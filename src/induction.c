@@ -22,6 +22,7 @@
 #include "../include/colors.h"
 
 induction_test_set *get_test_set(const char *test_library_name);
+bool run_tests(induction_test_set *tests);
 
 int main(int argc, char *argv[]) {
   if (argc != 2) {
@@ -31,7 +32,11 @@ int main(int argc, char *argv[]) {
 
   induction_test_set *test_set = get_test_set(argv[1]);
 
-  return EXIT_SUCCESS;
+  if (run_tests(test_set)) {
+    return EXIT_SUCCESS;
+  } else {
+    return EXIT_FAILURE;
+  }
 }
 
 #endif
