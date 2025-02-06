@@ -19,4 +19,4 @@ test-set.so: test-set.o
 	$(CC) $(CCOPTS) -c $< -o $@ 
 
 clean:
-	rm -f *.o *.a *.so induction
+	rm -f *.o *.a *.so

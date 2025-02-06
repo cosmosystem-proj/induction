@@ -32,7 +32,7 @@ static void *pull_test_set(void *dlhandle) {
   // so we can dispense with that.
   void *test_set = dlsym(dlhandle, "test_set");
 
-  if (test_set) {
+  if (!test_set) {
     printf("Unable to find test set, exiting\n");
     exit(EXIT_FAILURE);
   }
