@@ -7,7 +7,7 @@
 # See file LICENSE for full licensing information.
 
 CC = gcc
-INCLUDE =
+INCLUDE = 
 CCOPTS = 
 
 all: induction
@@ -16,7 +16,7 @@ induction: induction.o
 	$(CC) $^ -o $@
 
 %.o: %.c
-	$(CC) $(CCOPTS) $(INCLUDE) -c $< -o $@ 
+	$(CC) $(CCOPTS) -c $< -o $@ 
 
 clean:
 	rm -f *.o *.a *.so induction

@@ -15,6 +15,7 @@
 #include <dlfcn.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "../include/induction.h"
 #include "../include/colors.h"
 
 int main(int argc, char *argv[]) {

@@ -8,9 +8,24 @@
  * See file LICENSE for full licensing information.
  */
 
+#ifndef _INDUCTION_INDUCTION_H
+#define _INDUCTION_INDUCTION_H
+
+#include "../quanta/include/types.h"
+
 typedef bool (*induction_test)();
 
 typedef struct _induction_test_set {
+  induction_test test_func;
+  const char *description;
 } _induction_test_set;
 
-#define BEGIN_TEST_SET
+#define BEGIN_TEST_SET _induction_test_set test_set[] = {
+
+#define INDUCTION_TEST(x, y) {(x), (y)},
+
+#define END_TEST_SET                                                           \
+  }                                                                            \
+  ;
+
+#endif
