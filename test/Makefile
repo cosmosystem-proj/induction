@@ -1,5 +1,5 @@
 # Creator: Kurt M. Weber
-# Created on: 2025-02-04
+# Created on: 2025-02-05
 
 # This file is part of induction, a component of the Cosmoverse.
 # Licensed under Hippocratic License with clauses:
@@ -8,12 +8,12 @@
 
 CC = gcc
 INCLUDE = 
-CCOPTS = 
+CCOPTS = -fPIC -shared
 
-all: induction
+all: test-set.so
 
-induction: induction.o test_set.o
-	$(CC) $^ -o $@
+test-set.so: test-set.o
+	$(CC) $(CCOPTS) $^ -o $@
 
 %.o: %.c
 	$(CC) $(CCOPTS) -c $< -o $@ 
