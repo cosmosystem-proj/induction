@@ -1,5 +1,4 @@
-/*
- * Creator: Kurt M. Weber
+/* Creator: Kurt M. Weber
  * Created on: 2025-02-05
  *
  * This file is part of induction, a component of the Cosmoverse.
@@ -8,8 +7,8 @@
  * See file LICENSE for full licensing information.
  */
 
-#ifndef _INDUCTION_INDUCTION_H
-#define _INDUCTION_INDUCTION_H
+#ifndef INDUCTION_INDUCTION_H
+#define INDUCTION_INDUCTION_H
 
 #include "../quanta/include/types.h"
 

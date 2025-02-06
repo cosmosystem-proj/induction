@@ -1,5 +1,4 @@
-/*
- * Creator: Kurt M. Weber
+/* Creator: Kurt M. Weber
  * Created on: 2025-02-03
  *
  * This file is part of induction, a component of the Cosmoverse.
@@ -19,6 +18,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../include/induction.h"
+#include "../include/induction-internals.h"
 #include "../include/colors.h"
 
 induction_test_set *get_test_set(const char *test_library_name);

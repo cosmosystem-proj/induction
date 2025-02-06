@@ -1,5 +1,4 @@
-/*
- * Creator: Kurt M. Weber
+/* Creator: Kurt M. Weber
  * Created on: 2025-02-03
  *
  * This file is part of induction, a component of the Cosmoverse.

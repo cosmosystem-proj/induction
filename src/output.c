@@ -7,13 +7,13 @@
  * See file LICENSE for full licensing information.
  */
 
-#include "../include/induction.h"
+#include <stdio.h>
+#include "../include/colors.h"
 
-bool induction_test_true() { return true; }
-
-bool induction_test_false() { return false; }
-
-BEGIN_TEST_SET
-INDUCTION_TEST(induction_test_true, "True test")
-INDUCTION_TEST(induction_test_false, "False test")
-END_TEST_SET
+void induction_output(const char *s, const char *color) {
+  if (color) {
+    printf("%s%s%s", color, s, INDUCTION_COLOR_RESET);
+  } else {
+    printf("%s", s);
+  }
+}
