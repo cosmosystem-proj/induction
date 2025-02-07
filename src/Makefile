@@ -8,7 +8,7 @@
 
 CC = gcc
 INCLUDE = 
-CCOPTS = 
+CCOPTS = -g
 
 all: induction
 

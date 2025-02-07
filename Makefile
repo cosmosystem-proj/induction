@@ -6,8 +6,12 @@
 # HL3-CL-ECO-EXTR-FFD-MEDIA-MY-SUP-SV-TAL-USTA-XUAR
 # See file LICENSE for full licensing information.
 
+.PHONY: test
+
 all:
 	cd src && make all
+
+test:
 	cd test && make all
 
 clean:

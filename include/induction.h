@@ -21,7 +21,7 @@ typedef struct induction_test_set {
 
 #define BEGIN_TEST_SET induction_test_set test_set[] = {
 
-#define INDUCTION_TEST(x, y) {(x), (y)},
+#define INDUCTION_TEST(test_func, desc) {(test_func), (desc)},
 
 #define END_TEST_SET                                                           \
   {0, 0}}                                                                      \
