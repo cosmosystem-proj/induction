@@ -10,6 +10,7 @@
 
 all:
 	cd src && make all
+	ln -sf src/induction induction
 
 test:
 	cd test && make all
@@ -17,3 +18,4 @@ test:
 clean:
 	cd src && make clean
 	cd test && make clean
+	rm induction
