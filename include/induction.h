@@ -26,5 +26,10 @@ typedef struct induction_test_set {
 #define END_TEST_SET                                                           \
   {0, 0}}                                                                      \
   ;
+#define INDUCTION_SUBTEST(desc, exp)                                           \
+  printf(desc "\n");                                                           \
+  if (!(exp)) {                                                                \
+    return false;                                                              \
+  }
 
 #endif
